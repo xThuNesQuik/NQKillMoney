@@ -1,0 +1,6 @@
+name: KillMoney
+author: NesQuik
+version: 0.1
+description: Gives players money when they kill another player
+main: \KillMoney\Main
+api: [1.8.0]
