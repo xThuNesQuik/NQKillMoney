@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-namespace KillMoney;
+namespace NQKillMoney;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -36,7 +36,7 @@ class Main extends PluginBase implements Listener{
     public $economy = false;
 
     public function onLoad() {
-        $this->getLogger()->info(TextFormat::BLUE . "Loading KillMoney v0.1 By NesQuik....");
+        $this->getLogger()->info(TextFormat::BLUE . "Loading NQKillMoney v0.1 By NesQuik....");
     }
 
     public function onEnable() {
@@ -48,26 +48,26 @@ class Main extends PluginBase implements Listener{
         }
         if($this->config->get("Economy-Plugin") == "Economy") {
             if(is_dir($this->getServer()->getPluginPath()."EconomyAPI")) {
-		$this->getLogger()->info(TextFormat::GREEN."KillMoney   v0.1 By NesQuik Enabled with Economy!");
+		$this->getLogger()->info(TextFormat::GREEN."NQKillMoney  v0.1 By NesQuik Enabled with Economy!");
 		$this->economy = true;
             }else{
-		$this->getLogger()->info(TextFormat::RED."KillMoney could not be loaded, I can't find the Economy plugin");
+		$this->getLogger()->info(TextFormat::RED."NQKillMoney could not be loaded, I can't find the Economy plugin");
 		$this->economy = false;
             }
         }
         elseif($this->config->get("Economy-Plugin") == "PocketMoney") {
             if(is_dir($this->getServer()->getPluginPath()."PocketMoney")) {
-		$this->getLogger()->info(TextFormat::GREEN."KillMoney v0.1 By NesQuik Enabled with PocketMoney!");
+		$this->getLogger()->info(TextFormat::GREEN."NQKillMoney v0.1 By NesQuik Enabled with PocketMoney!");
 		$this->economy = true;
             }else{
-		$this->getLogger()->info(TextFormat::RED."KillMoney could not be loaded, I can't find the PocketMoney plugin");
+		$this->getLogger()->info(TextFormat::RED."NQKillMoney could not be loaded, I can't find the PocketMoney plugin");
 		$this->economy = false;
             }
         }
     }
 
     public function onDisable() {
-        $this->getLogger()->info(TextFormat::GREEN . "KillMoney v0.1 By NesQuik Disabled!");
+        $this->getLogger()->info(TextFormat::RED . "NQKillMoney v0.1 By NesQuik Disabled!");
     }
     
     public function onDeath(PlayerDeathEvent $event) {
