@@ -1,7 +1,7 @@
 # NQKillMoney
--=supports=-\n
-   PHP5\n
-   PHP7
+-=supports=-
+- PHP5
+- PHP7
 
 -=supports=-\n
-   Economy
+- Economy
