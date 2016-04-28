@@ -1,7 +1,7 @@
-# KillMoney
+# NQKillMoney
 -=supports=-
-- PHP5
-- PHP7
+   PHP5
+  PHP7
 
 -=supports=-
-- Economy
+   Economy
