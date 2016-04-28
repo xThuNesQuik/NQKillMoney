@@ -3,5 +3,5 @@
 - PHP5
 - PHP7
 
--=supports=-\n
+-=supports=-
 - Economy
